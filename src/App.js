@@ -1,5 +1,6 @@
 import "./styles.css";
 import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
 
 export default function App() {
   return (
@@ -8,6 +9,13 @@ export default function App() {
       <table>
         <tr>
           <td>Distance</td>
+          <td>
+            <TextField
+              id="outlined-number"
+              label="number"
+              type="number"
+            ></TextField>
+          </td>
         </tr>
         <tr>
           <td>Notes</td>
