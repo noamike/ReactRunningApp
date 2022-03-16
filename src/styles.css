@@ -2,17 +2,19 @@
   font-family: sans-serif;
   text-align: center;
 }
+
 table {
   font-family: sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
-td {
+td,
+tr {
   text-align: center;
+  margin: 5%;
 }
 
 textarea {
   resize: none;
   font-family: sans-serif;
-  cols: 5;
 }
