@@ -3,6 +3,10 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 
 export default function App() {
+  const inputProps = {
+    step: 0.01
+  };
+
   return (
     <div className="App">
       <h1>Track your Progress!</h1>
@@ -11,16 +15,29 @@ export default function App() {
           <td>Distance</td>
           <td>
             <TextField
+              inputProps={inputProps}
               id="outlined-number"
-              label="number"
               type="number"
-            ></TextField>
+              label="Miles"
+              min=".01"
+              size="small"
+            />
           </td>
+        </tr>
+        <tr>
+          <td>Time</td>
+          <td>
+            <TextField type="datetime" size="small" />
+          </td>
+        </tr>
+        <tr>
+          <td>Pace</td>
+          <td></td>
         </tr>
         <tr>
           <td>Notes</td>
           <td>
-            <textarea></textarea>
+            <textarea />
           </td>
         </tr>
       </table>
